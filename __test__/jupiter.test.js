@@ -9,3 +9,13 @@ describe ('jupiter', () => {
     expect(jupiter.lifeExpectancy).toEqual(0);
   });
 });
+
+describe ('jupiterSolarYear', () => {
+
+  test('should convert earth solar year to jupiter solar year', () => {
+    let jupiter = new Jupiter();
+    let earthSolar = 365;
+    let jupiterSolar = 12;
+    expect(jupiter.jupiterAge(earthSolar, jupiterSolar)).notToBe(0);
+  });
+});
