@@ -16,6 +16,6 @@ describe ('jupiterSolarYear', () => {
     let jupiter = new Jupiter();
     let earthSolar = 365;
     let jupiterSolar = 12;
-    expect(jupiter.jupiterAge(earthSolar, jupiterSolar)).notToBe(0);
+    expect(jupiter.jupiterSolarYear(earthSolar, jupiterSolar)).toEqual(4380);
   });
 });

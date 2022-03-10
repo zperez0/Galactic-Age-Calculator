@@ -4,4 +4,8 @@ export default class Jupiter {
   this.age = 0;
   this.lifeExpectancy = 0;
   }
+
+  jupiterSolarYear(earthSolar, jupiterSolar) {
+    return earthSolar * jupiterSolar;
+  }
 }
