@@ -1,11 +1,11 @@
-//import class here
+import Jupiter from './../src/jupiter.js';
 
 describe ('jupiter', () => {
 
   test('should return jupiter function',() => {
-    let jupiter = new Jupiter('Z', '27', '80');
+    let jupiter = new Jupiter("Z");
     expect(jupiter.name).toEqual("");
-    expect(jupiter.age).toBeGreaterThanOrEqual(0);
-    expect(jupiter.lifeExpectancy).toBeGreaterThanOrEqual(0);
+    expect(jupiter.age).toEqual(0);
+    expect(jupiter.lifeExpectancy).toEqual(0);
   });
 });
