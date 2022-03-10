@@ -19,3 +19,13 @@ describe ('jupiterSolarYear', () => {
     expect(jupiter.jupiterSolarYear(earthSolar, jupiterSolar)).toEqual(4380);
   });
 });
+
+describe ('jupiterAge', () => {
+
+  test('should convert human earth age to jupiter age', () => {
+    let jupiter = new Jupiter();
+    let jupiterDays = 4380;
+    let earthAge = 2;
+    expect(jupiter.jupiterAge(jupiterDays, earthAge)).toEqual(24);
+  });
+});
