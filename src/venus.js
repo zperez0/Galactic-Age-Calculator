@@ -10,4 +10,10 @@ export default class Venus {
     let earthDays = this.earthAge * 365;
     return earthDays;
   }
+
+  venusAge() {
+    this.earthConverter();
+    return Math.floor(Math.round(this.earthDays / this.venusSolar
+    ));
+  }
 }
