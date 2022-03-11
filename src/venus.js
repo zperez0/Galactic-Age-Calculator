@@ -3,7 +3,7 @@ export default class Venus {
     this.name = "";
     this.earthAge = 0;
     this.lifeExpectancy = 80;
-    this.venusSolar = .62;
+    this.venusSolar = 0.62;
   }
 
   earthConverter() {
@@ -13,13 +13,14 @@ export default class Venus {
 
   venusAge() {
     this.earthConverter();
-    return Math.floor(Math.round(this.earthDays / this.venusSolar
-    ));
+    return Math.floor(Math.round(this.earthDays / this.venusSolar));
   }
 
   lifeExp() {
     let venAge = this.venusAge();
-    let lifeExpected = Math.floor(Math.abs(this.lifeExpectancy / this.venusSolar - venAge));
+    let lifeExpected = Math.floor(
+      Math.abs(this.lifeExpectancy / this.venusSolar - venAge)
+    );
     return lifeExpected;
   }
 }
