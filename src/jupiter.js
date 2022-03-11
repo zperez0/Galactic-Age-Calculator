@@ -11,4 +11,10 @@ export default class Jupiter {
     let earthDays = this.earthAge * 365;
     return earthDays;
   }
+
+  jupiterAge() {
+    this.earthConverter();
+    return Math.floor((this.earthDays / this.jupiterSolar
+    ));
+  }
 }
