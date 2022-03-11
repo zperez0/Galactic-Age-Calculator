@@ -5,4 +5,9 @@ export default class Venus {
     this.lifeExpectancy = 80;
     this.venusSolar = .62;
   }
+
+  earthConverter() {
+    let earthDays = this.earthAge * 365;
+    return earthDays;
+  }
 }
