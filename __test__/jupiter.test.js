@@ -24,6 +24,14 @@ describe ('jupiterAge', () => {
   test('should convert earth days to jupiter age', () => { 
     let jupiter = new Jupiter();
     jupiter.earthDays = 730;
-    expect(jupiter.jupiterAge()).toBeCloseTo(60);
+    expect(jupiter.jupiterAge()).toBeCloseTo(62);
+  });
+});
+
+describe ('lifeExp', () => {
+
+  test('should return life expectancy', () => {
+    let jupiter = new Jupiter();
+    expect(jupiter.lifeExp()).toBeCloseTo(73);
   });
 });

@@ -1,10 +1,10 @@
 export default class Jupiter {
-  constructor() {
+  constructor(earthDays) {
   this.name = "";
   this.earthAge = 0;
   this.lifeExpectancy = 80;
-  this.jupiterSolar = 12;
-  this.earthDays = 0;
+  this.jupiterSolar = 11.86;
+  this.earthDays = earthDays;
   }
 
   earthConverter() {
@@ -14,7 +14,11 @@ export default class Jupiter {
 
   jupiterAge() {
     this.earthConverter();
-    return Math.floor((this.earthDays / this.jupiterSolar
+    return Math.floor(Math.round(this.earthDays / this.jupiterSolar
     ));
   }
 }
+
+
+
+//lifeExp * 365 / 4330 - life exp
