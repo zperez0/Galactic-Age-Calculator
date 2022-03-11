@@ -28,3 +28,12 @@ describe ('venusAge', () => {
     expect(venus.venusAge()).toBeCloseTo(1177);
   });
 });
+
+describe ('lifeExp', () => {
+
+  test('should return life expectancy', () => {
+    let venus = new Venus();
+    venus.earthDays = 730;
+    expect(venus.lifeExp()).toBeCloseTo(1047);
+  });
+});
