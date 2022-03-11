@@ -1,6 +1,4 @@
-//import class here
-
-import { TestScheduler } from "jest";
+import Mars from './../src/mars.js';
 
 describe ('Mars', () => {
 
