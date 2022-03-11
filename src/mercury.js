@@ -16,4 +16,10 @@ export default class Mercury {
     return Math.floor(Math.round(this.earthDays / this.mercurySolar
     ));
   }
+
+  lifeExp() {
+    let merAge = this.mercuryAge();
+    let lifeExpected = Math.floor(Math.abs(this.lifeExpectancy / this.mercurySolar - merAge));
+    return lifeExpected;
+  }
 }
