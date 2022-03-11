@@ -5,4 +5,9 @@ export default class Jupiter {
   this.lifeExpectancy = 80;
   this.jupiterSolar = 12;
   }
+
+  earthConverter() {
+    let earthDays = this.earthAge * 365;
+    return earthDays;
+  }
 }
