@@ -28,3 +28,12 @@ describe ('mercuryAge', () => {
     expect(mercury.mercuryAge()).toBeCloseTo(3042);
   });
 });
+
+describe ('lifeExp', () => {
+
+  test('should return life expectancy', () => {
+    let mercury = new Mercury();
+    mercury.earthDays = 730;
+    expect(mercury.lifeExp()).toBeCloseTo(2708);
+  });
+});
