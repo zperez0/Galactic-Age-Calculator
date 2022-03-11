@@ -19,3 +19,12 @@ describe('earthConverter', () => {
     expect(mercury.earthConverter()).toEqual(730);
   });
 });
+
+describe ('mercuryAge', () => {
+
+  test('should convert earth days to mercury age', () => { 
+    let mercury = new Mercury();
+    mercury.earthDays = 730;
+    expect(mercury.mercuryAge()).toBeCloseTo(3041);
+  });
+});
