@@ -31,3 +31,13 @@ describe ('marsAge', () => {
   });
 });
 
+describe ('lifeExp', () => {
+
+  test('should return life expectancy', () => {
+    let mars = new Mars();
+    mars.earthDays = 730;
+    expect(mars.lifeExp()).toBeCloseTo(345);
+    // lifeExp (80) / marsSolar (1.88) - marsAge(388)
+  });
+});
+
