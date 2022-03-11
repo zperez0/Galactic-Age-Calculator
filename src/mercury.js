@@ -5,4 +5,9 @@ export default class Mercury {
     this.lifeExpectancy = 80;
     this.mercurySolar = .24;
   }
+
+  earthConverter() {
+    let earthDays = this.earthAge * 365;
+    return earthDays;
+  }
 }
