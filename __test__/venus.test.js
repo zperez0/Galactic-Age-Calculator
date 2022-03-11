@@ -10,3 +10,12 @@ describe ('Venus', () => {
     expect(venus.venusSolar).toEqual(.62);
   });
 });
+
+describe('earthConverter', () => {
+
+  test('should convert human earth age to earth days', () => {
+    let venus = new Venus();
+    venus.earthAge = 2; 
+    expect(venus.earthConverter()).toEqual(730);
+  });
+});
