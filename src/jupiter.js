@@ -17,8 +17,10 @@ export default class Jupiter {
     return Math.floor(Math.round(this.earthDays / this.jupiterSolar
     ));
   }
+
+  lifeExp() {
+    this.jupiterAge();
+    return Math.floor(Math.abs(this.lifeExpectancy * 365 / 4330 - this.lifeExpectancy));
+  }
 }
 
-
-
-//lifeExp * 365 / 4330 - life exp
