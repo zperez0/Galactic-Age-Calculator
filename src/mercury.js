@@ -10,4 +10,10 @@ export default class Mercury {
     let earthDays = this.earthAge * 365;
     return earthDays;
   }
+
+  mercuryAge() {
+    this.earthConverter();
+    return Math.floor(Math.round(this.earthDays / this.mercurySolar
+    ));
+  }
 }
