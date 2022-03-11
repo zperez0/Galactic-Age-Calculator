@@ -19,3 +19,12 @@ describe('earthConverter', () => {
     expect(venus.earthConverter()).toEqual(730);
   });
 });
+
+describe ('venusAge', () => {
+
+  test('should convert earth days to venus age', () => { 
+    let venus = new Venus();
+    venus.earthAge = 2;
+    expect(venus.venusAge()).toBeCloseTo(1177);
+  });
+});
