@@ -18,3 +18,12 @@ describe ('earthConverter', () => {
     expect(jupiter.earthConverter()).toEqual(730);
   });
 });
+
+describe ('jupiterAge', () => {
+
+  test('should convert earth days to jupiter age', () => { 
+    let jupiter = new Jupiter();
+    jupiter.earthDays = 730;
+    expect(jupiter.jupiterAge()).toBeCloseTo(60);
+  });
+});
