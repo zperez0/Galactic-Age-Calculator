@@ -6,4 +6,9 @@ export default class Mars {
     this.marsSolar = 1.88;
     this.earthDays = 0;
   }
+
+  earthConverter() {
+    let earthDays = this.earthAge * 365;
+    return earthDays;
+  }
 }
