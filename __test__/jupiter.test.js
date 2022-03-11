@@ -6,15 +6,15 @@ describe ('jupiter', () => {
     let jupiter = new Jupiter("Z");
     expect(jupiter.name).toEqual("");
     expect(jupiter.earthAge).toEqual(0);
-    expect(jupiter.lifeExpectancy).toEqual(0);
+    expect(jupiter.lifeExpectancy).toEqual(80);
   });
 });
 
-describe ('jupiterAge', () => {
+describe ('earthConverter', () => {
 
   test('should convert human earth age to earth days', () => {
     let jupiter = new Jupiter();
     jupiter.earthAge = 2;
-    expect(jupiter.jupiterAge()).toEqual(730);
+    expect(jupiter.earthConverter()).toEqual(730);
   });
 });
