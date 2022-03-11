@@ -10,15 +10,15 @@ describe ('jupiter', () => {
   });
 });
 
-describe ('jupiterSolarYear', () => {
+// describe ('jupiterSolarYear', () => {
 
-  test('should convert earth solar year to jupiter solar year', () => {
-    let jupiter = new Jupiter();
-    let earthSolar = 365;
-    let jupiterSolar = 12;
-    expect(jupiter.jupiterSolarYear(earthSolar, jupiterSolar)).toEqual(4380);
-  });
-});
+//   test('should convert earth solar year to jupiter solar year', () => {
+//     let jupiter = new Jupiter();
+//     let earthSolar = 365;
+//     let jupiterSolar = 12;
+//     expect(jupiter.jupiterSolarYear(earthSolar, jupiterSolar)).toEqual(4380);
+//   });
+// });
 
 describe ('jupiterAge', () => {
 
