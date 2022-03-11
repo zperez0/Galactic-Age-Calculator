@@ -7,6 +7,6 @@ describe ('Mercury', () => {
     expect(mercury.name).toEqual("");
     expect(mercury.earthAge).toEqual(0);
     expect(mercury.lifeExpectancy).toEqual(80);
-    expect(mercury.mercurySolar).toEqual(1.88);
+    expect(mercury.mercurySolar).toEqual(.24);
   });
 });

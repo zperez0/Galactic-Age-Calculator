@@ -3,6 +3,6 @@ export default class Mercury {
     this.name = "";
     this.earthAge = 0;
     this.lifeExpectancy = 80;
-    this.mercurySolar = 1.88;
+    this.mercurySolar = .24;
   }
 }
