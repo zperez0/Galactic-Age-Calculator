@@ -11,3 +11,12 @@ describe ('Mars', () => {
     expect(mars.earthDays).toEqual(0);
   });
 });
+
+describe('earthConverter', () => {
+
+  test('should convert human earth age to earth days', () => {
+    let mars = new Mars();
+    mars.earthAge = 2; 
+    expect(mars.earthConverter()).toEqual(730);
+  });
+});
