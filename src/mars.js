@@ -4,7 +4,6 @@ export default class Mars {
     this.earthAge = 0;
     this.lifeExpectancy = 80;
     this.marsSolar = 1.88;
-    // this.earthDays = 0;
   }
 
   earthConverter() {
@@ -16,5 +15,11 @@ export default class Mars {
     this.earthConverter();
     return Math.floor(Math.round(this.earthDays / this.marsSolar
     ));
+  }
+
+  lifeExp() {
+    let marAge = this.marsAge();
+    let lifeExpected = Math.floor(Math.abs(this.lifeExpectancy / this.marsSolar - marAge));
+    return lifeExpected;
   }
 }
