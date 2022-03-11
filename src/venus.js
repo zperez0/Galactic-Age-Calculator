@@ -16,4 +16,10 @@ export default class Venus {
     return Math.floor(Math.round(this.earthDays / this.venusSolar
     ));
   }
+
+  lifeExp() {
+    let venAge = this.venusAge();
+    let lifeExpected = Math.floor(Math.abs(this.lifeExpectancy / this.venusSolar - venAge));
+    return lifeExpected;
+  }
 }
