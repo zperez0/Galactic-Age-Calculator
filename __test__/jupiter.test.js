@@ -1,12 +1,14 @@
 import Jupiter from './../src/jupiter.js';
 
-describe ('jupiter', () => {
+describe ('Jupiter', () => {
 
   test('should return jupiter function',() => {
     let jupiter = new Jupiter("Z");
     expect(jupiter.name).toEqual("");
     expect(jupiter.earthAge).toEqual(0);
     expect(jupiter.lifeExpectancy).toEqual(80);
+    expect(jupiter.jupiterSolar).toEqual(11.86);
+    expect(jupiter.earthDays).toEqual(0);
   });
 });
 
