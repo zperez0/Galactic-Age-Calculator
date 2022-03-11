@@ -20,3 +20,14 @@ describe('earthConverter', () => {
     expect(mars.earthConverter()).toEqual(730);
   });
 });
+
+describe ('marsAge', () => {
+
+  test('should convert earth days to mars age', () => { 
+    let mars = new Mars();
+    mars.earthDays = 730;
+    expect(mars.marsAge()).toBeCloseTo(388);
+    // 730 / 1.88
+  });
+});
+
