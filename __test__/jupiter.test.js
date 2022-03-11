@@ -32,6 +32,7 @@ describe ('lifeExp', () => {
 
   test('should return life expectancy', () => {
     let jupiter = new Jupiter();
-    expect(jupiter.lifeExp()).toBeCloseTo(73);
+    jupiter.earthDays = 730;
+    expect(jupiter.lifeExp()).toBeCloseTo(55);
   });
 });

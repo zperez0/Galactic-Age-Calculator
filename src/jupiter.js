@@ -19,8 +19,12 @@ export default class Jupiter {
   }
 
   lifeExp() {
-    this.jupiterAge();
-    return Math.floor(Math.abs(this.lifeExpectancy * 365 / 4330 - this.lifeExpectancy));
+    let jupAge = this.jupiterAge();
+    let lifeExpected = Math.floor(Math.abs(this.lifeExpectancy / this.jupiterSolar - jupAge));
+    return lifeExpected;
   }
 }
 
+// life exp(80) /  jupiterSolar(11.83)
+
+// life exp - jupAge(current age)(62)
